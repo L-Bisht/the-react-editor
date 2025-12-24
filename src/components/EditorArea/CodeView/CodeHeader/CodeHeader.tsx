@@ -1,5 +1,5 @@
 import { useProject } from "@app/context/project";
-import EditorTab from "../EditorTab";
+import CodeTab from "../CodeTab";
 
 const EditorHeader = () => {
   const { openedFile } = useProject();
@@ -8,7 +8,7 @@ const EditorHeader = () => {
       <div className="flex flex-row">
         {[{ id: openedFile.path, label: openedFile.name, isActive: true }].map(
           (tab) => (
-            <EditorTab
+            <CodeTab
               key={tab.id}
               onClick={(id) => console.log(id)}
               id={tab.id}

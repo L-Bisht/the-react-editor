@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/parser": "^7.28.5",
+    "@babel/traverse": "^7.28.5",
     "@monaco-editor/react": "^4.8.0-rc.3",
     "@tailwindcss/vite": "^4.1.18",
     "install": "^0.13.0",

@@ -1,5 +1,6 @@
 import { ipcRenderer, contextBridge } from "electron";
 import { projectApi } from "./api/projectApi";
+import { jsxParserAPI } from "./api/jsxParserApi";
 
 // --------- Expose some API to the Renderer process ---------
 contextBridge.exposeInMainWorld("ipcRenderer", {
@@ -24,3 +25,5 @@ contextBridge.exposeInMainWorld("ipcRenderer", {
 });
 
 contextBridge.exposeInMainWorld("projectApi", projectApi);
+
+contextBridge.exposeInMainWorld("jsxParserApi", jsxParserAPI);

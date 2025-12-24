@@ -1,7 +1,7 @@
 import { PropsWithChildren, useMemo, useState } from "react";
 import NavContext from "./NavContext";
 import { TNavItem } from "./nav.types";
-import { Files, Search } from "lucide-react";
+import { Component, Files, Search } from "lucide-react";
 import { NAV_ITEM_ID } from "./nav.constants";
 
 type TProps = PropsWithChildren;
@@ -15,6 +15,11 @@ const navItems: TNavItem[] = [
     id: NAV_ITEM_ID.SEARCH,
     title: "Search",
     icon: Search,
+  },
+  {
+    id: NAV_ITEM_ID.COMPONENT_VIEW,
+    title: "Component View",
+    icon: Component,
   },
 ];
 
