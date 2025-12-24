@@ -1,6 +1,5 @@
 import { ipcRenderer, contextBridge } from "electron";
 import { projectApi } from "./api/projectApi";
-import { terminaApi } from "./api/terminalApi";
 
 // --------- Expose some API to the Renderer process ---------
 contextBridge.exposeInMainWorld("ipcRenderer", {
@@ -25,5 +24,3 @@ contextBridge.exposeInMainWorld("ipcRenderer", {
 });
 
 contextBridge.exposeInMainWorld("projectApi", projectApi);
-
-contextBridge.exposeInMainWorld("terminalApi", terminaApi);

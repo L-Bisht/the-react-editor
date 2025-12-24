@@ -2,7 +2,6 @@ import { app, BrowserWindow, globalShortcut } from "electron";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import "./ipc/project.ipc";
-import "./ipc/terminal.ipc";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
